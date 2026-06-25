@@ -1,1 +1,14 @@
 
+        if (((camera.coordinates.x - tree_x) >= 0 - canvas.width / 2) && ((camera.coordinates.x - tree_x) <= 0 + canvas.width / 2) && ((camera.coordinates.y - tree_y) >= 0 - canvas.height / 2) && ((camera.coordinates.y - tree_y) <= 0 + canvas.height / 2)) {
+            ctx.fillStyle = "#00cc00"
+            ctx.fillRect(tree_x - camera.coordinates.x + canvas.width / 2, tree_y - camera.coordinates.y + canvas.height / 2, tree_size, tree_size)
+            ctx.fillStyle = "#00b300"
+            ctx.fillRect(tree_x + tree_size * 0.05 - camera.coordinates.x + canvas.width / 2, tree_y + tree_size * 0.05 - camera.coordinates.y + canvas.height / 2, tree_size * 0.9, tree_size * 0.9)
+            ctx.fillStyle = "#009900"
+            ctx.fillRect(tree_x + tree_size * 0.1 - camera.coordinates.x + canvas.width / 2, tree_y + tree_size * 0.1 - camera.coordinates.y + canvas.height / 2, tree_size * 0.8, tree_size * 0.8)
+            ctx.fillStyle = "#008000"
+            ctx.fillRect(tree_x + tree_size * 0.2 - camera.coordinates.x + canvas.width / 2, tree_y + tree_size * 0.2 - camera.coordinates.y + canvas.height / 2, tree_size * 0.6, tree_size * 0.6)
+            ctx.fillStyle = "#006600"
+            ctx.fillRect(tree_x + tree_size * 0.30 - camera.coordinates.x + canvas.width / 2, tree_y + tree_size * 0.30 - camera.coordinates.y + canvas.height / 2, tree_size * 0.40, tree_size * 0.40)
+            ctx.fillStyle = "#004d00"
+            ctx.fillRect(tree_x + tree_size * 0.425 - camera.coordinates.x + canvas.width / 2, tree_y + tree_size * 0.425 - camera.coordinates.y + canvas.height / 2, tree_size * 0.15, tree_size * 0.15)
